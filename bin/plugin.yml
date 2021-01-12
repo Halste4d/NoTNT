@@ -1,0 +1,5 @@
+main: net.me.NoTNT.Main
+name: NoTNT
+version: 1.0
+author: Halstead
+description: A simple plugin that blocks TNT from being placed.
