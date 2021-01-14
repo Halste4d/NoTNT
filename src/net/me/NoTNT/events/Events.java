@@ -13,8 +13,8 @@ public class Events implements Listener {
         Player p = event.getPlayer();
         Block block = (Block) event.getBlockPlaced();
         if(block.getType() == Material.TNT) {
-            block.breakNaturally();
-            p.sendMessage("§c[NoTNT] It's not allowed to put TNT here.");
+            event.setCancelled(true);
+            p.sendMessage("Â§c[NoTNT] It's not allowed to put TNT here.");
         }
     }
 }
